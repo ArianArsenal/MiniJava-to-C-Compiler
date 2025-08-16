@@ -1,0 +1,54 @@
+Compiler Project:
+
+!(change the path to your need)
+
+🟥Antlr:
+java -jar "C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" -o src/gen -visitor -package gen src/antlrGrammar.g4
+
+
+🟨Compile:
+
+javac -cp "C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" src/Main.java src/codeGeneration/*.java src/gen/*.java src/myUtils/*.java src/symbolTable/*.java src/symbolTable/record/*.java src/typeChecker/*.java
+
+
+🟩Run:
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/Factorial.java
+gcc -o factorial_program main.c Fac.c ../runtime/runtime.c -I../runtime
+./factorial_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/BinarySearch.java
+gcc -o binary_search_program main.c BS.c ../runtime/runtime.c -I../runtime
+./binary_search_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/BubbleSort.java
+gcc -o bubble_sort_program main.c BBS.c ../runtime/runtime.c -I../runtime
+./bubble_sort_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/QuickSort.java
+gcc -o quick_sort_program main.c QS.c ../runtime/runtime.c -I../runtime
+./quick_sort_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/LinkedList.java
+gcc -o linked_list_program main.c Element.c List.c LL.c ../runtime/runtime.c -I../runtime
+./linked_list_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/InheritanceTest.java
+gcc -o inheritance_program main.c Animal.c Dog.c Runner.c ../runtime/runtime.c -I../runtime
+./inheritance_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/LoopTest.java
+gcc -o loop_test_program main.c Looper.c ../runtime/runtime.c -I../runtime
+./loop_test_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/ForLoopTest.java
+gcc -o for_loop_program main.c F_Looper.c ../runtime/runtime.c -I../runtime
+./for_loop_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/BinaryTree.java
+gcc -o binary_tree_program main.c BT.c Tree.c ../runtime/runtime.c -I../runtime
+./binary_tree_program.exe
+
+java -cp "src;C:\Users\Arian\OneDrive\Desktop\Compiler\Project\compiler\antlr4-4.13.1-complete.jar" Main examples/FinalTest.java
+gcc -o final_program main.c Calculator.c ScientificCalculator.c TestRunner.c ../runtime/runtime.c -I../runtime
+./final_program.exe
